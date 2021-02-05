@@ -7,7 +7,7 @@ searchButton.click(function () {
 
     function makeButton(userInput) {
         var cityList = $("#cityList")
-        var cityNewDiv = $("<button>").addClass("listDiv")
+        var cityNewDiv = $("<button>").addClass(" listDiv")
         
         cityList.append(cityNewDiv.text(userInput))
         $(cityNewDiv).click(function(event){
