@@ -23,7 +23,7 @@ searchButton.click(function () {
     if (userInput !== "") {
         console.log(userInput);
 
-        requestUrl = "http://api.openweathermap.org/data/2.5/weather?q=" + userInput + "&units=imperial&appid=" + "e3743c74c20f8d9c13a77d0e00135d22";
+        requestUrl = "https://api.openweathermap.org/data/2.5/weather?q=" + userInput + "&units=imperial&appid=" + "e3743c74c20f8d9c13a77d0e00135d22";
 
         fetch(requestUrl)
 
