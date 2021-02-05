@@ -1,3 +1,13 @@
 .header{
     text-align: center;
+    background-color: gray;
+}
+
+
+.secondDiv{
+    margin-top: 15px;
+}
+
+.listDiv{
+    margin-top: 10px;
 }

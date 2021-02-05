@@ -2,14 +2,24 @@ var searchButton = $("#searchButton");
 var cityName = "";
 var todayDate = new Date().toLocaleDateString() 
 
-
-
-
-
-
 searchButton.click(function () {
     var userInput = $("#userInput").val();
 
+    function makeButton(userInput) {
+        var cityList = $("#cityList")
+        var cityNewDiv = $("<button>").addClass(" listDiv")
+        
+        cityList.append(cityNewDiv.text(userInput))
+        $(cityNewDiv).click(function(event){
+           
+           var buttonText = $(this).text();
+           getWeather(buttonText);
+        })
+
+        
+    }
+
+    function getWeather(userInput){
     if (userInput !== "") {
         console.log(userInput);
 
@@ -149,8 +159,6 @@ searchButton.click(function () {
 
                 $("#day5Date").text(day5)
 
-
-
                 var Day5Temp = data.daily[4].feels_like.day;
                 var Day5Humidity = data.daily[4].humidity;
                 console.log("Day 5 Temp: " + Day5Temp); 
@@ -160,31 +168,22 @@ searchButton.click(function () {
                 $("#day5Humid").text("Humidity: " + Day5Humidity + "%");
 
 
-                
-                // var forcast5dayDiv = $("#five-day-forcast");
-                // var row = $("<div>").addClass("row");
-                // forcast5dayDiv.append(row);
-
-
-                // //NEED HELP
-                // for (var i = 0; i < 5; i++){
-                // console.log("Daily Temp: " + data.daily[i].feels_like.day); 
-                // console.log("Daily Humidity: " + data.daily[i].humidity); 
-                // var dailyTemp = data.daily[i].feels_like.day;
-                // var dailyHumidity = data.daily[i].humidity;
-                // }   
-
-
             });// End of second fetch
 
 
 
         }); // End of first fetch  
 
+       
+
+
 
 
     }// End of if statement
 
+}
+getWeather(userInput)
+makeButton(userInput)
 
 })// End of on click
 
