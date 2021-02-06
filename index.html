@@ -14,15 +14,16 @@
 <div class="container row">
 
     <!-- This Div is for all content in leftside of the page -->
-    <div class="col-3">
+    <div class="col-3 card">
 
         <!-- This Div will display the search bar and button -->
-        <div class="div">
+        <div>
             <h4>Search for a City:</h4>
-            <input id="userInput" type="search" placeholder="City Name" >
-            <button id="searchButton">Search</button>        
+            <input id="userInput" type="text" placeholder="City Name" class="form-control" >
+            <button class="btn btn-success" id="searchButton">Search</button>   
+                
         </div>
-
+        <hr> 
         <!-- This Div will diplay search history -->
         <div id="cityList"></div>
     </div>
@@ -42,44 +43,44 @@
             <!-- This Div is for 5 days of Forcast -->
             <div class="col-12 secondDiv">
                 <h3 id="five-day-forcast"></h3>
-                <div class="row" id="5dayRow">
+                <div class="row" id="weeklyRow">
 
                     <div class="col-2 card" id="day1">
-                        <h6 id="day1Date"></h6>
-                        <p id="iconDay1"></p>
-                        <p id="day1Temp"></p>
-                        <p id="day1Humid"></p>
+                        <h5 id="day1Date"></h5>
+                        <h6 id="iconDay1"></h6>
+                        <h6 id="day1Temp"></h6>
+                        <h6 id="day1Humid"></h6>
                     </div>
 
                     <div class="col-2 card" id="day2">
-                        <h6 id="day2Date"></h6>
-                        <p id="iconDay2"></p>
-                        <p id="day2Temp"></p>
-                        <p id="day2Humid"></p>
+                        <h5 id="day2Date"></h5>
+                        <h6 id="iconDay2"></h6>
+                        <h6 id="day2Temp"></h6>
+                        <h6 id="day2Humid"></h6>
 
                     </div>
 
                     <div class="col-2 card" id="day3">
-                        <h6 id="day3Date"></h6>
-                        <p id="iconDay3"></p>
-                        <p id="day3Temp"></p>
-                        <p id="day3Humid"></p>
+                        <h5 id="day3Date"></h5>
+                        <h6 id="iconDay3"></h6>
+                        <h6 id="day3Temp"></h6>
+                        <h6 id="day3Humid"></h6>
 
                     </div>
 
                     <div class="col-2 card" id="day4">
-                        <h6 id="day4Date"></h6>
-                        <p id="iconDay4"></p>
-                        <p id="day4Temp"></p>
-                        <p id="day4Humid"></p>
+                        <h5 id="day4Date"></h5>
+                        <h6 id="iconDay4"></h6>
+                        <h6 id="day4Temp"></h6>
+                        <h6 id="day4Humid"></h6>
 
                     </div>
 
                     <div class="col-2 card" id="day5">
-                        <h6 id="day5Date"></h6>
-                        <p id="iconDay5"></p>
-                        <p id="day5Temp"></p>
-                        <p id="day5Humid"></p>
+                        <h5 id="day5Date"></h5>
+                        <h6 id="iconDay5"></h6>
+                        <h6 id="day5Temp"></h6>
+                        <h6 id="day5Humid"></h6>
                     </div>
                 </div>
 

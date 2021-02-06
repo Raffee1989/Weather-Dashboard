@@ -1,13 +1,46 @@
+body {
+    background-color: #fffffc;
+}
 .header{
     text-align: center;
-    background-color: gray;
+    background-color: #caffbf;
+    padding: 15px;
 }
 
+.container{
+    margin-top: 10px;
+}
+.btn-success{
+    float: right;
+}
+
+#CurrentDay{
+    margin: 10px;
+}
 
 .secondDiv{
     margin-top: 15px;
 }
 
-.listDiv{
+.btn{
     margin-top: 10px;
 }
+
+#weeklyRow{
+    text-align: center;
+}
+
+.col-2{
+    margin: 10px;
+}
+
+
+.card{
+background-color: #9bf6ff;
+
+}
+
+.col-3{
+background-color: #fdffb6
+}
+
